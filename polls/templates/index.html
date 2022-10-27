@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Logis Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/mylogo.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Logis - v1.2.1
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'assets/img/logo.png' %}" alt="">
+        <h1>Flast_International</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{% url 'index' %}" class="active">Acceuil</a></li>
+          <li><a href="{% url 'about' %}">A Propos</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <!-- <li><a href="{% url 'pricing' %}">Boutique</a></li> -->
+          <li class="dropdown"><a href="#"><span>Connexion</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="{% url 'connexion' %}">Se Connecter</a></li>
+              <li><a href="{% url 'inscription' %}">S'inscrire</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a class="get-a-quote" href="{% url 'get_a_quote' %}">Optenir un Devis</a></li>
+          <li><a href="#faq">FAQ</a></li>
+
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">Votre partenaire de livraison rapide comme l'éclair dans le Monde</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Flast_International assure l'expédition de votre colie avec rapidité, Sécurité et assurance par tous dans le monde entiers. Nos moyens de transport sont par voix aérien et Maritime. Vous avez la possibilité de suivre le trajet de votre colis jusqu'a la destination.</p>
+
+          <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+            <input type="text" class="form-control" placeholder="ZIP code or CitY">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="2099" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Clients</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="140" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Pays</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="1053" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Destinations</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+            <div class="col-lg-3 col-6">
+              <div class="stats-item text-center w-100 h-100">
+                <span data-purecounter-start="0" data-purecounter-end="356" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Travailleurs</p>
+              </div>
+            </div><!-- End Stats Item -->
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="{% static 'assets/img/hero-img.svg' %}" class="img-fluid mb-3 mb-lg-0" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+            <div>
+              <h4 class="title">Shopping</h4>
+              <p class="description">Faites vos achats  partous dans le monde et optenez une livraison fiable rapide et sécurisé</p>
+              <a href="{% url 'service_details' %}" class="readmore stretched-link"><span>En savoir plus   </span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+            <div>
+              <h4 class="title">Livreurs</h4>
+              <p class="description">Nous livrons partous dans le monde dans toute les ville et à par voix trestre, aérieene, Maritime & Féroviere</p>
+              <a href="{% url 'service_details' %}" class="readmore stretched-link"><span>En savoir plus</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <div>
+              <h4 class="title">Observez</h4>
+              <p class="description">Ne soyez pas en colère contre la douleur dans la réprimande dans le plaisir, il veut être à un cheveux de la douleur dans l'espoir qu'il n'y a pas de reproduction</p>
+              <a href="{% url 'service_details' %}" class="readmore stretched-link"><span>En savoir plus</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+            <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+          </div>
+          <div class="col-lg-6 content order-last  order-lg-first">
+            <h3>A Propos</h3>
+            <p>
+              Acteur national et International de la livraison express de colis aux entreprises et aux particuliers, Flast_International s’appuie sur une équipe de 356 collaborateurs et a distribué des colis dans. Chronopost dessert 140 pays dans le monde et a un accès privilégié au réseau européen et Americaines.
+            </p>
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <h5>Pour vous, nous nous engageons</h5>
+                  <p>Chacun de nos collaborateurs est à votre écoute et s'engage à vous délivrer une qualité de service à la hauteur de vos attentes.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-fullscreen-exit"></i>
+                <div>
+                  <h5>Pour vous, nous nous adaptons</h5>
+                  <p>Nous portons une attention particulière à vos enjeux présents et futurs afin d'être en mesure de vous apporter la solution la plus appropriée.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-broadcast"></i>
+                <div>
+                  <h5>Pour vous, nous innovons</h5>
+                  <p>Afin de vous assurer des services pratiques, efficaces et pertinents, nous ne cessons d'innover et d'ouvrir la voie à une expérience client optimale.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="service" class="services pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Nos Services</span>
+          <h2>Nos Services</h2>
+
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/storage-service.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="{% url 'service_details' %}#service-details1" class="stretched-link">Livraison Express</a></h3>
+              <p>Besoin d’expédier en express vos colis vers l’international ? Flast_International vous fait bénéficier d’une livraison express de vos colis vers 140 destinations</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/logistics-service.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="{% url 'service_details' %}#service-details2" class="stretched-link">livraison de Logistics</a></h3>
+              <p>Besoin d’expédier  vos marchandise ou logistigue vers l’international ? Flast_International vous fait bénéficier d’une livraison  de vos vos marchandise (par aérienet, maritime,terestre ou ferroviaire)  vers 140 destinations</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/cargo-service.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="{% url 'service_details' %}#service-details3" class="stretched-link">livraison Maritime</a></h3>
+              <p>Besoin d’expédier par bateaux vos colis vers l’international ? Flast_International vous fait bénéficier d’une livraison Maritime de vos colis vers 12 Africaine</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/trucking-service.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="{% url 'service_details' %}#service-details4" class="stretched-link">Transit </a></h3>
+              <p>Besoin de faire transité vos marchandise a l’international ? Flast_International vous fait bénéficier d’une Transit vers l'Afrique</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/packaging-service.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="{% url 'service_details' %}#service-details5" class="stretched-link">Emballage</a></h3>
+              <p>Besoin d’un emballage tout-inclus pour expédier rapidement ? Flast_International vous propose des formats d’emballages Prêt-à-Expédier</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card">
+              <div class="card-img">
+                <img src="{% static 'assets/img/warehousing-service.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <h3><a href="{% url 'service_details' %}#service-details6" class="stretched-link">Stockage</a></h3>
+              <p>Besoin d’entrepots pour du des marchandise ppour un bout de temps en France , USA ? Flast_International met a votre disposition des entrepos sécurisés</p>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action" class="call-to-action">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Appeler à l'Action</h3>
+            <p> Besoin d'une instimation ou d'information pourl'expedition d'un colis ou un conteneur</p>
+            <a class="cta-btn" href="#">Appeler à l'Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+
+          <div class="col-md-5">
+            <img src="{% static 'assets/img/features-1.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>LIVRAISON À DOMICILE</h3>
+            <p class="fst-italic">
+              Plus besoin de réaliser une prise de rendez-vous pour obtenir son colis, plus d’avis de passage, c’est désormais le colis qui s’organise pour venir au consommateur !
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i> Le sortir de ses stocks (ou de le commander dans le cas d’un site de dropshipping),</li>
+              <li><i class="bi bi-check"></i> L’emballer, L’étiqueter</li>
+              <li><i class="bi bi-check"></i>L’expédier à l’adresse donnée par l’acheteur. </li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="{% static 'assets/img/features-2.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1">
+            <h3>Suivre le deplacement de mon colis jusqu'a la livraison</h3>
+            <p class="fst-italic">
+              L’envoi de colis se veut toujours simple et sécurisé avec Flast_International. Vous avez la possibilité de suivre à tout moment l’expédition de votre colis à l'international. <br><br>
+              
+            </p>
+            <p>
+              L’expertise Flast_International, c’est aussi pouvoir suivre en temps réel l’expédition de votre colis vers chaque destination en France comme à l'international. <br>
+              Grâce à notre système de suivi de colis et de localisation, vous pouvez connaître les différentes étapes de livraison de vos documents et marchandises.
+              Ce service gratuit est disponible en ligne grâce au module ci-dessus. Il suffit de renseigner le numéro de colis pour accéder directement à toutes les informations.
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="{% static 'assets/img/features-3.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Faite le Shopping en ligne dans toutes les boutique en France ou au USA et ont vous livres vos Achats où vous êtes</h3>
+            <p>L’envoi de colis se veut toujours simple et sécurisé avec Flast_International. Vous avez la possibilité de suivre à tout moment l’expédition de votre colis à l'internationa.</p>
+            <ul>
+              <li><i class="bi bi-check"></i>Acheté dans m'importe Quels boutique en France ou au USA etant chez.</li>
+              <li><i class="bi bi-check"></i>Flast_International se charge de vous l'apporter chez vous a la maison.</li>
+              <li><i class="bi bi-check"></i> Avec Flast_International votre colis arrive chez vous en sécurité, rapidement.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="{% static 'assets/img/features-4.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1">
+            <h3>Expédition et transit de compteneur par vois maritime jusqu'a destination</h3>
+            <p class="fst-italic">
+              Pour vos demenagement de la France et USA ver l'Afrique , ou les envoi de gros colis (voiture, Camions, etc.) Flast_International met la votre dispotion des compteneur qui partent chaque deux semaine de la france et des USA en destination de l'Afrique.
+            </p>
+            <p>
+              Flast_International également sur les routes de la mer nous avons des compteneur qui quittent les ports de la France et USA pour Destination de l'Afrique.
+            </p>
+          </div>
+        </div><!-- Features Item -->
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="slides-1 swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/kabre.jpg' %}" class="testimonial-img" alt="">
+                <h3>KABRE Abdoul Aziz</h3>
+                <h4>Informaticien</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Informaticien de formation specialiser dans le Development wep Actuellement en formation a Siras Labs.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                <h3>COMPAORE Souleymane</h3>
+                <h4>DAF à Ouagadougou</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Informaticien de formation specialiser dans le Development wep Actuellement en formation a Siras Labs.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                <h3>COMPAORE Abdoul Aziz</h3>
+                <h4>Gestionnaire à Paris</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Informaticien de formation specialiser dans le Development wep Actuellement en formation a Siras Labs.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+                <h3>BANDAOGO Masimilien</h3>
+                <h4>Convoyeur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Informaticien de formation specialiser dans le Development wep Actuellement en formation a Siras Labs.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                <h3>OUEDRAOGO Moussa</h3>
+                <h4>Transitaire</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Informaticien de formation specialiser dans le Development wep Actuellement en formation a Siras Labs.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>FAQ</span>
+          <h2>FAQ</h2>
+
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-10">
+
+            <div class="accordion accordion-flush" id="faqlist">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Comment contacter le Service Client Particuliers ?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Le Service Client Particuliers est disponible au 09 69 391 391 (appel non surtaxé) <br>
+                    Nous sommes disponibles du lundi au vendredi de 8h à 19h. <br>
+
+                    Le samedi de 8h à 12h <br>
+
+                    N'oubliez pas de vous munir de votre numéro d'envoi ou de votre numéro d'avis de passage lors de l'appel.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Comment envoyer mon colis ?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Quelques étapes simples pour expédier votre colis :
+ 
+                        1. Renseignez vos informations d'expédition. A noter que pour les expéditions multiples, vous ne pouvez pas envoyer plus de 5 colis vers un même destinataire. <br>
+                        2. Sélectionnez l'offre correspondant à vos besoins. <br>
+                        3. Sélectionnez vos options et le mode de prise en charge de votre colis <br>
+                        4. Complétez les coordonnées expéditeur, destinataire <br>
+                        5. Validez et réglez par carte bancaire, Paypal ou prélèvement. <br>
+
+                        6. Imprimez votre lettre de transport : <br>
+
+                        Nous vous offrons la possibilité d'éditer vous-même vos lettres de transport, directement en ligne.
+                        
+                        7. Déposez votre colis dans nos points de proximité : <br>
+
+                        10 000 bureaux de poste <br>
+                        16 000 relais Pickup ayant des horaires d’ouverture élargis et un retrait rapide<br>
+                        81 agences Chronopost en France Métropolitaine <br>
+                        6 agences DOM <br>
+                        
+                        Vous devez envoyer un colis mais vous n'avez pas d'imprimante? Pas de problème ! 
+                        Imprimez votre étiquette de transport directement dans un bureau de poste. 
+                        Rendez-vous dans un bureau de poste équipé d'un automate d'affranchissement
+                        Choisissez sur l'automate "Retrait web colissimo / Chronopost"
+                        Saisissez votre numéro de réservation
+                        Validez et lancez l'impression
+                        Collez l'étiquette sur le colis et déposez le au guichet
+                        Récupérez la preuve de dépôt
+                        ou Déposez directement votre colis dans un relais Pickup Rendez-vous dans un relais Pickup Présentez le QR code reçu par email sur votre smartphone Le relais Pickup prend en charge votre colis Récupérez la preuve de dépôt 
+                        ​ Bénéficiez de l'enlèvement de votre colis sur demande (ESD) à l'adresse de votre choix :
+                       Après impression de votre lettre de transport, vous pouvez demander à ce qu'un livreur Chronopost vienne directement récupérer votre colis en cliquant sur « Enlever ». Vous devrez alors saisir toutes les informations nécessaires à l’enlèvement de votre colis (adresse de prise en charge, nombre de colis, poids total, volume etc.).
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Quels sont les délais & tarifs de livraison ?
+                  </button>
+                </h3>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Vous souhaitez connaître nos tarifs et nos délais de livraison en fonction de vos besoins ? C'est simple et rapide avec E-Chrono. 
+
+                    Pour plus de facilité, n'hésitez pas à profiter de notre offre " Prêt-à-Expédier " : plus besoin de bricoler un emballage qui ne supportera pas le transport ! Chronopost vous propose un emballage tout-en-un résistant qui permet à vos objets de voyager en express en toute sécurité. Les prix sont disponibles sur la Eboutique.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                  </button>
+                </h3>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    <i class="bi bi-question-circle question-icon"></i>
+                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                  </button>
+                </h3>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                  </div>
+                </div>
+              </div><!-- # Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+            <span>Flast_International</span>
+          </a>
+          <p>Votre partenaire de livraison rapide comme l'éclair dans le Monde.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Lien Utiles</h4>
+          <ul>
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="{% url 'about' %">A Propos</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <!-- <li><a href="{% url 'service_details' %}">Terms of service</a></li> -->
+            <!-- <li><a href="{% url 'connexion' %}">Privacy policy</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Nos Services</h4>
+          <ul>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Transit</a></li>
+            <li><a href="#">Ventes</a></li>
+            <!-- <li><a href="#">Marketing</a></li> -->
+            <!-- <li><a href="#">Import Export</a></li> -->
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Coordonnées</h4>
+          <p>
+            0314 Ouaga 2000 <br>
+            Ouagadougou, Secteur 24<br>
+            Burkina Faso <br><br>
+            <strong>Burkina:</strong> +226 6000 4381 <br>
+            <strong>France:</strong> +1 64 1199 4381 <br>
+            <strong>USA:</strong> +33 6411 9947 4381 <br>
+            <strong>Email:</strong> kabreaziz60@gmail.com<br>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Flast_International</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
