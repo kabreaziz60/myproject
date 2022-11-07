@@ -18,5 +18,3 @@ class Devis(models.Model) :
 
     
 
-
-

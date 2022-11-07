@@ -81,8 +81,8 @@
         <div class="container position-relative">
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
-              <h2>DEMANDE DE DEVIS</h2>
-              <p>Le devis sert à sécuriser la relation commerciale avec le client: lorsque ce dernier a donné son accord pour l'exécution de la prestation, il est engagé sur l'offre qui a été convenue.</p>
+              <h2>Envoyé un Colis</h2>
+              <p></p>
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@
         <div class="container">
           <ol>
             <li><a href="{% url 'index' %}">Acceuil</a></li>
-            <li>Optenir un Devis</li>
+            <li>Envoie de Colis</li>
           </ol>
         </div>
       </nav>
@@ -107,8 +107,8 @@
 
           <div class="col-lg-7">
             <form action="forms/quote.php" method="post" class="php-email-form">
-              <h3>DEMANDE DE DEVIS</h3>
-              <p>Pour avoir une idée sur les frais veillez remplir les champs suivants</p>
+              <h3> Information sur le colis</h3>
+              <p>Veillez remplir les champs suivants</p>
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -132,7 +132,7 @@
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" name="name" class="form-control" placeholder="Nom" required>
+                  <input type="text" name="name" class="form-control" placeholder="Nom & Prenom" required>
                 </div>
 
                 <div class="col-md-12 ">
@@ -143,16 +143,34 @@
                   <input type="text" class="form-control" name="phone" placeholder="Telephone" required>
                 </div>
 
-                <div class="col-md-12">
+
+                <div class="col-lg-12">
+                    <h4>Informations du recepteur</h4>
+                  </div>
+  
+                  <div class="col-md-12">
+                    <input type="text" name="name" class="form-control" placeholder="Nom & Prenom" required>
+                  </div>
+  
+                  <div class="col-md-12 ">
+                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                  </div>
+  
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" name="phone" placeholder="Telephone" required>
+                  </div>
+
+                <!-- <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
-                </div>
+                </div> -->
 
                 <div class="col-md-12 text-center">
                   <div class="loading">Chargement</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Votre demande de devis a été envoyée avec succès. Merci!</div>
 
-                  <button type="submit">Obtenir un devis</button>
+                  <button type="submit" style="background-color: rgb(246, 115, 115);">Payer à l'embarquement</button>
+                  <button type="submit">Payer</button>
                 </div>
 
               </div>

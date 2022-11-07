@@ -36,6 +36,10 @@ def connexion(request):
 def inscription(request):
     template = loader.get_template('inscription.html')
     return HttpResponse(template.render())
+def envoi(request):
+    template = loader.get_template('envoi.html')
+    return HttpResponse(template.render())
+
 
 
 

@@ -11,5 +11,7 @@ urlpatterns = [
     path('get_a_quote/', views.get_a_quote, name='get_a_quote'), 
     path('connexion/', views.connexion, name='connexion'), 
     path('inscription/', views.inscription, name='inscription'), 
+    path('envoi/', views.envoi, name='envoi'), 
+
 
 ]
