@@ -14,6 +14,16 @@ class Devis(models.Model) :
     Telephone =models.CharField(max_length =100)
     Message =models.TextField()
 
+class Users(models.Model) :
+    First_Name =models.CharField(max_length =100)
+    Last_Name=models.CharField(max_length =100)
+    Birthday = models.DateField(auto_now=True)
+    Gender =models.BooleanField(default=True)
+    Email =models.EmailField(max_length =50)
+    Telephone =models.CharField(max_length =100)
+    Pays =models.IntegerField()
+
+
 
 
     
