@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Logis Bootstrap Template - Services</title>
+  <title>connecter</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -60,13 +60,20 @@
           <!-- <li><a href="{% url 'services' %}">Services</a></li> -->
           <!-- <li><a href="{ % url 'pricing' %}">BOUTIQUE</a></li> -->
           <li class="dropdown"><a href="#"><span>Connexion</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
+            <!-- <ul>
               <li><a href="{% url 'connexion' %}">Se Connecter</a></li>
               <li><a href="{% url 'inscription' %}">S'inscrire</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="{% url 'contact' %}">Contact</a></li>
           <li><a class="get-a-quote" href="{% url 'get_a_quote' %}">Optenir un Devis</a></li>
+
+          <li class="dropdown"><a href="#"><span>KABRE Abdoul Aziz</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="{% url 'connexion' %}">Se Deconnecter</a></li>
+              <!-- <li><a href="{% url 'inscription' %}">S'inscrire</a></li> -->
+            </ul>
+          </li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -195,7 +202,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card">
               <div class="card-img">
-                <img src="{% static 'assets/img/service-details1.jpg' %}" alt="" class="img-fluid">
+                <img src="{% static 'assets/img/storage-service.jpg' %}" alt="" class="img-fluid">
               </div>
               <h3><a href="{% url 'service_details' %}#service-details1" class="stretched-link">Livraison Express</a></h3>
               <p>Besoin d’expédier en express vos colis vers l’international ? Flast_International vous fait bénéficier d’une livraison express de vos colis vers 140 destinations</p>

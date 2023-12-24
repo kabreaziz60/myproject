@@ -22,7 +22,6 @@ def pricing(request):
 def service_details(request):
     template = loader.get_template('service_details.html')
     return HttpResponse(template.render())
-
 def get_a_quote(request):
     template = loader.get_template('get_a_quote.html')
     return HttpResponse(template.render())
@@ -38,6 +37,9 @@ def inscription(request):
     return HttpResponse(template.render())
 def envoi(request):
     template = loader.get_template('envoi.html')
+    return HttpResponse(template.render())
+def connecter(request):
+    template = loader.get_template('connecter.html')
     return HttpResponse(template.render())
 
 

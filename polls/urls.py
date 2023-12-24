@@ -12,6 +12,7 @@ urlpatterns = [
     path('connexion/', views.connexion, name='connexion'), 
     path('inscription/', views.inscription, name='inscription'), 
     path('envoi/', views.envoi, name='envoi'), 
+    path('connecter/', views.connecter, name='connecter'), 
 
 
 ]
